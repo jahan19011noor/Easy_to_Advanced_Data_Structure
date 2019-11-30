@@ -11,11 +11,12 @@ class doublyLinkedList:
 
     def get_node(self, index):
         current = self.first
-
-        for i in range(index):
+        i=0
+        while i<index:
             if current is None: 
                 return None
             current = current.next
+            i = i+1
 
         return current
 
